@@ -27,7 +27,8 @@ A drirectory named "<feed name>" should be created. In that direcory, the feed w
 2. Only media stored on tumblr's CDN will be downloaded.
 External media will not be downloaded.
 
-3. I have only yet tested this software on Linux.
+3. I have only yet tested this software on Linux. I ran it once on
+Windows and it didn't crash.
 
 4. No pretty formatting is done. It would probably be easy for someone
 with the know-how to parse the JSON into a nice HTML presentation.
@@ -35,3 +36,6 @@ with the know-how to parse the JSON into a nice HTML presentation.
 5. I am not sure it extracts all media. If it doesn't, please create
 an issue where you supply the name of the feed and the media which
 is not downloaded. Thank you!
+
+6. No error checking is done. It will most likely crap out on any
+small hurdle it encounters.
