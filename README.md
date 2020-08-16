@@ -1,7 +1,7 @@
 ## Tumblrator - download tumblr feeds
 
 This script gets feeds from Feedly and saves it as a json. It also 
-extracts URLs pointing to tumblrs CDN (*.media.tumblr.com) and tries to 
+extracts URLs pointing to tumblr's CDN (*.media.tumblr.com) and tries to 
 download those.
 
 
@@ -17,7 +17,7 @@ feeds in one go, and they will be downloaded sequentially.
 
 Example: `python tumblrator.py probertson`
 
-A drirectory named "<feed name>" should be created. In that direcory, the feed will be saved as `feed.json` along with any (see below) media files.
+A drirectory named "&lt;feed name&gt;" should be created. In that direcory, the feed will be saved as `feed.json` along with any (see below) media files.
 
 
 ## Caveats
