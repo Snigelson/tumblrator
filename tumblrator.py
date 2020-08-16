@@ -17,17 +17,14 @@ def get_media(url, savepath='.'):
 	print("=== Downloading {}".format(media_basename))
 	urllib.request.urlretrieve(url, os.path.join(savepath,media_basename))
 
-if __name__ == "__main__":
-	feed_list = sys.argv[1:]
-
-	for f_name in feed_list:
+def download_feed(f_name):
 		print("Downloading feed: {}".format(f_name))
 		try:
 			os.mkdir(f_name)
 		except FileExistsError:
 			if not os.path.isdir(f_name):
 				print("ERROR: Could not create directory {}".format(f_name))
-				continue
+				return False
 			else:
 				print("Directory {} already exists.".format(f_name))
 
@@ -52,3 +49,12 @@ if __name__ == "__main__":
 
 		for url in media:
 			get_media(url, savepath=f_name)
+
+		return True
+
+
+if __name__ == "__main__":
+	feed_list = sys.argv[1:]
+
+	for f_name in feed_list:
+		status = download_feed(f_name)
