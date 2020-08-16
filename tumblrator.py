@@ -18,10 +18,6 @@ def get_media(url, savepath='.'):
 	urllib.request.urlretrieve(url, os.path.join(savepath,media_basename))
 
 if __name__ == "__main__":
-
-	#	feed_json = get_feed("probertson")
-	#	feed_json = get_feed("exposedtease")
-
 	feed_list = sys.argv[1:]
 
 	for f_name in feed_list:
